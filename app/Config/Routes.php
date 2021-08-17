@@ -36,6 +36,10 @@ $routes->get('/', 'Home::index');
 $routes->get('/blog', 'Blog::index');
 $routes->get('/journey', 'Home::journey');
 $routes->get('/testing', 'Home::secret');
+$routes->get('/berkeley.log', 'Berkeley::berkeleyLog');
+$routes->get('/api/berkeley_log/posts', 'BerkeleyLogApi::index');
+
+$routes->resource('BerkeleyApi');
 
 /*
  * --------------------------------------------------------------------

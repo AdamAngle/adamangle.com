@@ -1,0 +1,35 @@
+{
+    "events": [
+        {
+            "start_date": {
+                "year": 2015,
+                "month": 9
+            },
+            "end_date": {
+                "year": 2020,
+                "month": 3
+            },
+            "text": {
+                "headline": "VEX Robotics Competition"
+            },
+            "background": {
+                "url": "/assets/journey/i_bg_robotics.jpg"
+            },
+            "unique_id": "tl-c-slide-robotics"
+        },
+        {
+            "start_date": {
+                "year": 2015,
+                "month": 9
+            },
+            "end_date": {
+                "year": 2019,
+                "month": 3
+            },
+            "text": {
+                "headline": "SkillsUSA"
+            },
+            "unique_id": "tl-c-slide-skillsusa"
+        }
+    ]
+}

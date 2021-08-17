@@ -21,6 +21,7 @@ function handleScroll(e, hidden=null) {
 window.addEventListener('scroll', handleScroll, { passive: true });
 $(function(){
   handleScroll();
+  
 })
 $('#navbar-nav').on('show.bs.collapse', function() {
   handleScroll(null, false);

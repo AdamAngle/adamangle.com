@@ -11,7 +11,7 @@ class Home extends BaseController
 
 	public function journey()
 	{
-		return view('Journey');
+		return view('JourneyNew');
 	}
 
 	public function secret()

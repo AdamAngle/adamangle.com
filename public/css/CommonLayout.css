@@ -1,5 +1,9 @@
 /* Page Layout */
 
+.rounded {
+  border-radius: 5em;
+}
+
 div#root {
   text-align: center;
 }
@@ -242,4 +246,18 @@ a.head-scroll-arrow span {
   40% {
     transform: rotate(-45deg) translate(0, 0);
   }
+}
+
+.loading-overlay {
+  display:    none;
+  position:   fixed;
+  z-index:    1000;
+  top:        0;
+  left:       0;
+  height:     100%;
+  width:      100%;
+  background: rgba( 255, 255, 255, .8 ) 
+              url('img/ajaxload.svg') 
+              50% 50%
+              no-repeat;
 }

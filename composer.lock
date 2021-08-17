@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9d2bd099423e1089da15d4a9f6cb564",
+    "content-hash": "471e11e475b817e2a3d7e2da9ae43655",
     "packages": [
         {
             "name": "codeigniter4/framework",
@@ -311,6 +311,122 @@
                 "source": "https://github.com/php-fig/log/tree/1.1.4"
             },
             "time": "2021-05-03T11:20:27+00:00"
+        },
+        {
+            "name": "tatter/relations",
+            "version": "v2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tattersoftware/codeigniter4-relations.git",
+                "reference": "d033806af70e3eade9baf89ac4ea5c5995b92d59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-relations/zipball/d033806af70e3eade9baf89ac4ea5c5995b92d59",
+                "reference": "d033806af70e3eade9baf89ac4ea5c5995b92d59",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0",
+                "tatter/schemas": "^2.0"
+            },
+            "require-dev": {
+                "codeigniter4/codeigniter4": "dev-develop",
+                "tatter/tools": "^1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tatter\\Relations\\": "src"
+                },
+                "exclude-from-classmap": [
+                    "**/Database/Migrations/**"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Gatner",
+                    "email": "mgatner@tattersoftware.com",
+                    "homepage": "https://tattersoftware.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Entity relationships for CodeIgniter 4",
+            "homepage": "https://github.com/tattersoftware/codeigniter4-relations",
+            "keywords": [
+                "Relationships",
+                "codeigniter",
+                "codeigniter4",
+                "database",
+                "entity",
+                "mapping",
+                "relations"
+            ],
+            "support": {
+                "issues": "https://github.com/tattersoftware/codeigniter4-relations/issues",
+                "source": "https://github.com/tattersoftware/codeigniter4-relations/tree/v2.0.6"
+            },
+            "time": "2020-12-30T16:54:38+00:00"
+        },
+        {
+            "name": "tatter/schemas",
+            "version": "v2.0.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tattersoftware/codeigniter4-schemas.git",
+                "reference": "36e71bc8f8de8126d5cf91f9e9d13412facbe1eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-schemas/zipball/36e71bc8f8de8126d5cf91f9e9d13412facbe1eb",
+                "reference": "36e71bc8f8de8126d5cf91f9e9d13412facbe1eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "codeigniter4/codeigniter4": "dev-develop",
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "8.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tatter\\Schemas\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Gatner",
+                    "email": "mgatner@tattersoftware.com",
+                    "homepage": "https://tattersoftware.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Database schema management, for CodeIgniter 4",
+            "homepage": "https://github.com/tattersoftware/codeigniter4-schemas",
+            "keywords": [
+                "codeigniter",
+                "codeigniter4",
+                "database",
+                "mapping",
+                "schemas",
+                "structure"
+            ],
+            "support": {
+                "issues": "https://github.com/tattersoftware/codeigniter4-schemas/issues",
+                "source": "https://github.com/tattersoftware/codeigniter4-schemas/tree/v2.0.12"
+            },
+            "time": "2020-11-11T21:36:54+00:00"
         }
     ],
     "packages-dev": [

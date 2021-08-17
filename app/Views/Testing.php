@@ -17,7 +17,7 @@
 
 <?= $this->section('header_content') ?>
   
-  <h1 class="fw-light">Journey</h1>
+  <h1 class="fw-light">Test</h1>
   <h2 class="fw-light">subtitle</h2>
 <?= $this->endSection() ?>
 

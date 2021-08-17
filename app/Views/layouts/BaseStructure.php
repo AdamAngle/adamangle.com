@@ -10,12 +10,12 @@
       name="description"
       content="Adam Angle's website and blog."
     />
-    <link rel="apple-touch-icon" href="<?php echo BASE_URL; ?>logo192.png" />
+    <link rel="apple-touch-icon" href="<?php echo BASE_URL; ?>/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="<?php echo BASE_URL; ?>manifest.json" />
+    <link rel="manifest" href="<?php echo BASE_URL; ?>/manifest.json" />
     
     <link href="<?php echo ASSETS_THIRDPARTY; ?>/bootstrap.min.css" rel="stylesheet">
     
