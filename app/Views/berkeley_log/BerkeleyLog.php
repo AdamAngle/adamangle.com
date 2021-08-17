@@ -3,6 +3,17 @@
 <?= $this->section('title') ?>Blog<?= $this->endSection() ?>
 
 <?= $this->section('styles') ?>
+  <style>
+    #img-header-ctrl {
+      background: linear-gradient(
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.3)
+      ), url("<?= ASSETS_GENERIC ?>/berkeley_log/header.jpg") no-repeat center top;
+      text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+      background-size: cover;
+      background-position: middle bottom;
+    }
+  </style>
 <?= $this->endSection() ?>
 
 <?= $this->section('header_content') ?>
@@ -12,12 +23,10 @@
 
 <?= $this->section('content') ?>
   <div class="pt-1em ta-l container-xl">
-    <div class="row"><div class="col-lg-6 col-sm-12">test</div></div>
-    <hr />
     <div class="row">
       <div class="loading-overlay"></div>
-      <div class="card col-lg-3 col-sm-12">
-
+      <div class="card card-white col-lg-3 col-sm-12 text-center">
+        Once I get a few more posts here, I will add some cool filtering controls here.
       </div>
       <div class="col-lg-9 col-sm-12">
         <div class="blog-list"></div>

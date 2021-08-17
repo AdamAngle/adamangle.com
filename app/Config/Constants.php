@@ -82,4 +82,5 @@ defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest auto
 defined('BASE_URL') || define('BASE_URL', "http://localhost:8080");
 defined('ASSETS_CSS') || define('ASSETS_CSS', BASE_URL."/css/");
 defined('ASSETS_JS') || define('ASSETS_JS', BASE_URL."/js/");
+defined('ASSETS_GENERIC') || define('ASSETS_GENERIC', BASE_URL."/assets");
 defined('ASSETS_THIRDPARTY') || define('ASSETS_THIRDPARTY', BASE_URL."/thirdparty");
