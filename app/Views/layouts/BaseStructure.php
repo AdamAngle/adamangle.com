@@ -10,6 +10,8 @@
       name="description"
       content="Adam Angle's website and blog."
     />
+    <?= $this->renderSection('meta') ?>
+    
     <link rel="apple-touch-icon" href="<?php echo BASE_URL; ?>/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a

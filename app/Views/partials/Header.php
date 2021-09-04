@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top bg-transition" id="navbar-main">
+<nav class="navbar navbar-expand-lg <?= $this->renderSection('headerClass') ?> bg-transparent fixed-top bg-transition" id="navbar-main">
   <div class="container-xl">
     <a class="brand-no-decoration" href="/">
       <span class="navbar-brand">Adam Angle</span>
@@ -16,9 +16,9 @@
         </li>
         <li class="nav-item">
           <a
-            class="nav-link <?= check_nav('\\App\\Controllers\\Blog', 'index', 'active', '') ?>"
+            class="nav-link <?= check_nav('\\App\\Controllers\\Blog', 'blog', 'active', '') ?>"
             href="/blog"
-            <?= check_nav('\\App\\Controllers\\Blog', 'index', 'aria-current="page"', '') ?>>
+            <?= check_nav('\\App\\Controllers\\Blog', 'blog', 'aria-current="page"', '') ?>>
             Blog
           </a>
         </li>
@@ -28,14 +28,6 @@
             href="/journey"
             <?= check_nav('\\App\\Controllers\\Home', 'journey', 'aria-current="page"', '') ?>>
             Journey
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link <?= check_nav('\\App\\Controllers\\Berkeley', 'berkeleyLog', 'active', '') ?>"
-            href="/berkeley.log"
-            <?= check_nav('\\App\\Controllers\\Berkeley', 'berkeleyLog', 'aria-current="page"', '') ?>>
-            berkeley.log
           </a>
         </li>
       </div>

@@ -1,5 +1,9 @@
 /* Page Layout */
 
+html {
+  overflow-x: hidden;
+}
+
 .rounded {
   border-radius: 5em;
 }
@@ -91,6 +95,8 @@ div#content-body {
 
 .card-col-blog {
   margin-bottom: 1em;
+  text-decoration: none;
+  color: black;
 }
 
 .card-col-blog img {
@@ -133,6 +139,22 @@ img.img-nostretch {
 
 .card-blog-content {
   padding: 1em !important;
+}
+
+.blog-content {
+  font-size: 18px;
+  max-width: 720px;
+}
+
+.blog-post-publish-date {
+  color: rgb(119, 119, 119);
+  padding-bottom: 1em;
+}
+
+.return-to-blog {
+  margin-bottom: 1em;
+  text-decoration: underline;
+  color: black;
 }
 
 /* Gradient Header Animation */

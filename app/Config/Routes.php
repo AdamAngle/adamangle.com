@@ -33,13 +33,15 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/blog', 'Blog::index');
+$routes->get('/blog', 'Blog::blog');
+$routes->get('/blog/(:num)', 'Blog::viewPost/$1');
+$routes->get('/blog/([0-9]+\.md)', 'Blog::viewMarkdown/$1');
 $routes->get('/journey', 'Home::journey');
 $routes->get('/testing', 'Home::secret');
-$routes->get('/berkeley.log', 'Berkeley::berkeleyLog');
-$routes->get('/api/berkeley_log/posts', 'BerkeleyLogApi::index');
+$routes->get('/api/blog/posts', 'BlogApi::index');
+$routes->get('/api/blog/posts/(:num)', 'BlogApi::getDetailedPost/$1');
 
-$routes->resource('BerkeleyApi');
+//$routes->resource('BlogApi');
 
 /*
  * --------------------------------------------------------------------

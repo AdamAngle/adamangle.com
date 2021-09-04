@@ -5,13 +5,15 @@
 
 class BlogListClient {
 
-  constructor(api, loader, list, listItem, emptyView=null) {
+  constructor(api, loader, list, listItem, emptyView=null, urlPrefix='/') {
     this.api = api;
     this.loader = $(loader);
     this.t_list = $(list);
     this.t_listItem = $(listItem);
     this.curPosts = null;
     this.emptyView = $(emptyView);
+    this.dateFormatOpts = { year: 'numeric', month: 'short', day: 'numeric' };
+    this.urlPrefix = urlPrefix;
   }
 
   getPosts() {
@@ -27,6 +29,10 @@ class BlogListClient {
         this.curPosts = data.posts
         this.curFilteredCount = data.filteredCount
         this.curTotalCount = data.totalCount
+        data.posts.forEach((post) => {
+          var cvtDate = new Date(post.created_at.date);
+          post.created_at.date = cvtDate.toLocaleDateString('en-US', this.dateFormatOpts);
+        })
       },
       complete: () => {
         this.renderPosts();
@@ -47,9 +53,9 @@ class BlogListClient {
 
     this.curPosts.forEach(post => {
       var postItem = this.t_listItem.clone(true);
-
+      postItem.attr('href', this.urlPrefix + post.id)
       postItem.find('.post-title').text(post.title);
-      postItem.find('.post-date').text(post.created_at);
+      postItem.find('.post-date').text(post.created_at.date);
       postItem.find('.post-description').text(post.short_description);
       postItem.show().removeClass('card-template')
       this.t_list.append(postItem);

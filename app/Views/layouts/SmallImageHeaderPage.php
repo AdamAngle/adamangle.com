@@ -1,4 +1,5 @@
 <?= $this->extend('layouts/MainLayout') ?>
+<?= $this->section('header_class') ?>navbar-dark<?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
   <div class="anim-gradient-container-sm">
