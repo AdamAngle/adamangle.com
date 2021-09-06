@@ -9,11 +9,11 @@ class BlogPostModel extends Model
     protected $returnType = 'App\Entities\BlogPostListItem';
 
     public function getPosts($slug = null) {
-        if (!$slug) {
-            return $this->asObject('App\Entities\BlogPostListItem')->findAll();
+        $posts = $this->asArray()->findAll();
+        foreach ($posts as $key => $value) {
+            unset($posts[$key]['body']);
         }
-
-        return $this->asArray()->where(['slug' => $slug])->first();
+        return $posts;
     }
 
     public function getDetailedPost($id) {
