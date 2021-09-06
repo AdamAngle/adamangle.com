@@ -191,13 +191,17 @@ img.img-nostretch {
 }
 
 .anim-gradient {
-  background: linear-gradient(-45deg,
+  /* background: repeating-linear-gradient(45deg,
     #23a6d5, #13add9, #00b4dd, #00bbe0, #00c2e3, #00c8e5, #00cfe7, #00d6e8, #00dce8, #00e3e8, #16eae8,
     #2df0e7, #16eae8, #00e3e8, #00dce8, #00d6e8, #00cfe7, #00c8e5, #00c2e3, #00bbe0, #00b4dd, #13add9,
     #23a6d5, #13add9, #00b4dd, #00bbe0, #00c2e3, #00c8e5, #00cfe7, #00d6e8, #00dce8, #00e3e8, #16eae8,
-    #2df0e7, #16eae8, #00e3e8, #00dce8, #00d6e8, #00cfe7, #00c8e5, #00c2e3, #00bbe0, #00b4dd, #13add9, #23a6d5);
-  background-size: 400% 400%; /* 207 for vert. linear */
-
+    #2df0e7, #16eae8, #00e3e8, #00dce8, #00d6e8, #00cfe7, #00c8e5, #00c2e3, #00bbe0, #00b4dd, #13add9, #23a6d5); */
+  background: repeating-linear-gradient(-45deg,
+    #23a6d5, #13add9, #00b4dd, #00bbe0, #00c2e3, #00c8e5, #00cfe7, #00d6e8, #00dce8, #00e3e8, #16eae8,
+    #2df0e7, #16eae8, #00e3e8, #00dce8, #00d6e8, #00cfe7, #00c8e5, #00c2e3, #00bbe0, #00b4dd, #13add9,
+    #23a6d5, #13add9, #00b4dd, #00bbe0, #00c2e3, #00c8e5, #00cfe7, #00d6e8, #00dce8, #00e3e8, #16eae8,
+    #2df0e7);
+  background-size: 300% 300%; /* 207 for vert. linear */
   width: 100%;
   height: 100%;
   animation: gradientHeader 15s linear infinite;
@@ -213,7 +217,7 @@ img.img-nostretch {
     background-position: 0 0;
   }
   100% {
-    background-position: 100% 0;
+    background-position: 100% 100%;
   }
 }
 
@@ -293,7 +297,7 @@ a.head-scroll-arrow span {
   height:     100%;
   width:      100%;
   background: rgba( 255, 255, 255, .8 ) 
-              url('/img/ajaxload.svg') 
+              url('/static/img/ajaxload.svg') 
               50% 50%
               no-repeat;
 }

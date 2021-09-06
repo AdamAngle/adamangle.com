@@ -2,7 +2,7 @@
   ? $this->extend('layouts/SmallImageHeaderPage')
   : $this->extend('layouts/SmallHeaderPage') ?>
 
-<?= $this->section('title') ?>Journey<?= $this->endSection() ?>
+<?= $this->section('title') ?><?= $blogPost->title ?> - Blog<?= $this->endSection() ?>
 <?= $this->section('headerClass') ?>navbar-dark<?= $this->endSection() ?>
 
 <?= $this->section('meta') ?>
@@ -31,7 +31,7 @@
 <?= $this->section('header_content') ?>
   
   <h1 class="fw-light"><?= $blogPost->title ?></h1>
-  <h2 class="fw-light"><?= $blogPost->short_description ?></h2>
+  <h2 class="fw-light"><?= $blogPost->subtitle ?></h2>
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>

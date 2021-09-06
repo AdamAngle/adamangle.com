@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="<?php echo BASE_URL; ?>favicon.ico" />
+    <link rel="icon" href="<?php echo BASE_URL; ?>/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#23a6d5" />
     <meta
@@ -11,7 +11,7 @@
       content="Adam Angle's website and blog."
     />
     <?= $this->renderSection('meta') ?>
-    
+
     <link rel="apple-touch-icon" href="<?php echo BASE_URL; ?>/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
